@@ -4,6 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Simple DOM example</title>
+        <style>
+            .highlight {
+                color: white;
+                background-color: black;
+                padding: 10px;
+                width: 250px;
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
         <section>
@@ -30,10 +39,19 @@
             linkPara.appendChild(text);
 
             //Moving and removing elements
-            sect.appendChild(linkPara);
-            sect.removeChild(linkPara);
+            
+            // sect.appendChild(linkPara);
+            // sect.removeChild(linkPara);
             // linkPara.remove();'
             // linkPara.parentNode.removeChild(linkPara);
+
+            //Manipulating styles
+            // para.style.color = "white";
+            // para.style.backgroundColor = "black";
+            // para.style.padding = "10";
+            // para.style.width = "250px";
+            // para.style.textAlign = "center";
+            para.setAttribute("class", "highlight");
         </script>
     </body>
 </html>
